@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="files/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Problem Magic Solution - Contactez-nous</title>
+
+  <link rel="stylesheet" type="text/css" href="files/bootstrap.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link href="files/font-awesome.min.css" rel="stylesheet" />
+
+  <link href="files/style.css" rel="stylesheet" />
+  <link href="files/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Styles personnalisés pour le formulaire de contact */
+    .contact_section {
+      color: #f1f1f1;
+      padding: 60px 0;
+    }
+
+    .contact_section .heading_container h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact_form {
+      background-color: #fff; /* Fond clair pour le formulaire */
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact_form input, .contact_form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact_form input:focus, .contact_form textarea:focus {
+      border-color: #3aca74; /* Effet de focus avec la couleur thème de l'entreprise */
+      outline: none;
+    }
+
+    .contact_form button {
+      background-color: #3aca74; /* Couleur thème de l'entreprise */
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact_form button:hover {
+      background-color: #2f9e59; /* Nuance plus foncée au survol */
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="files/logo.png" alt="Logo">
+          </a>
+        </nav>
+      </div>
+    </header>
+    <section class="contact_section" id="contact-us">
+      <div class="container">
+        <div class="heading_container">
+          <h2>Contactez-nous</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-lg-8 mx-auto">
+            <div class="contact_form">
+              <form id="form">
+                <div>
+                  <input type="text" placeholder="Votre Nom" required />
+                </div>
+                <div>
+                  <input type="email" placeholder="Votre Email" required />
+                </div>
+                <div>
+                  <input type="text" placeholder="Votre Téléphone" required />
+                </div>
+                <div>
+                  <textarea class="message-box" placeholder="Message" required></textarea>
+                </div>
+                <div class="btn_box">
+                  <button type="submit">ENVOYER</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info_contact">
+            <h4>Entreprise</h4>
+            <div class="contact_link_box">
+              <p>
+                Numéro d'entreprise 00943935 <br>
+                Adresse : Lime St, London EC3M 7HR, Royaume-Uni <br>
+                Numéro de téléphone : 01632 960189 <br>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info_link_box">
+            <h4>Liens</h4>
+            <div class="info_links">
+              <a href="about.html">
+                <img src="files/nav-bullet.png" alt="Img"> À Propos de Nous
+              </a>
+              <a href="contact.html">
+                <img src="files/nav-bullet.png" alt="Img"> Contactez-nous
+              </a>
+              <a href="terms.html">
+                <img src="files/nav-bullet.png" alt="Img"> Termes et Conditions
+              </a>
+              <a href="privacy.html">
+                <img src="files/nav-bullet.png" alt="Img"> Politique de Confidentialité
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; 2025 Problem Magic Solution. Tous Droits Réservés</p>
+    </div>
+  </footer>
+  <script src="files/jquery.min.js"></script>
+  <script src="files/bootstrap.min.js"></script>
+  <script src="files/custom.js"></script>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      document.getElementById("form").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+
+      setTimeout(() => {
+        document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Merci de nous avoir contactés ! Notre équipe vous contactera sous peu.</p>';
+      }, 2000);
+    });
+  </script>
+
+</body>
+
+</html>
