@@ -140,6 +140,11 @@ a:focus {
   text-transform: uppercase;
 }
 
+.navbar-brand img {
+  width: 186px;
+  height: auto;
+}
+
 .custom_nav-container {
   padding: 10px 0;
 }
@@ -372,6 +377,12 @@ a:focus {
   height: 50px;
   z-index: 3;
   font-size: 22px;
+}
+
+@media only screen and (max-width: 767px) {
+  .slider_section .carousel_btn-box {
+    top: 55%;
+  }
 }
 
 .slider_section .carousel_btn-box .carousel-control-prev,
