@@ -556,16 +556,16 @@
           <div class="form_container">
             <form id="form">
               <div>
-                <input type="text" placeholder="Your Name" />
+                <input type="text" placeholder="Your Name" / required>
               </div>
               <div>
-                <input type="email" placeholder="Your Email" />
+                <input type="email" placeholder="Your Email" / required>
               </div>
               <div>
-                <input type="text" placeholder="Your Phone" />
+                <input type="text" placeholder="Your Phone" / required>
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" class="message-box" placeholder="Message" / required>
               </div>
               <div class="btn_box ">
                 <button type="submit">
@@ -648,6 +648,18 @@
   <!-- bootstrap js -->
   <script src="files/bootstrap.min.js"></script>
   <script src="files/custom.js"></script>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+    
+        document.getElementById("form").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+    
+        setTimeout(() => {
+            document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Thank you for registering with {Company}. Our team will get in touch with you shortly to discuss your options.</p>';
+        }, 2000);
+    });
+  </script>
 
 </body>
 
